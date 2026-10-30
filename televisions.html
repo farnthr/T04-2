@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisions Data - Appliance Energy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container" id="nav-logo" title="Go to Home">
+            <img src="logo.png" alt="Energy Power Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a id="nav-home" href="index.html">Home</a></li>
+                <li><a id="nav-tvs" href="televisions.html" class="active">Televisions</a></li>
+                <li><a id="nav-about" href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Television Energy Consumption Analysis</h1>
+
+        <div class="content-box" style="background-color: #fde68a; border-left-color: #5b4636;">
+            <h2>The Consumer's Dilemma</h2>
+            <p style="font-size: 1.1rem; color: #5b4636;">
+                Buying a new TV can be confusing. With so many brands, screen sizes, and technologies (like LCD and OLED), how do you choose the right one without facing massive electricity bills? The charts below tell the story of the Australian TV market, guiding you through what is available and revealing the hidden energy costs of going "too big" or choosing the wrong brand. Let's explore the data!
+            </p>
+        </div>
+        
+        <div class="content-box">
+            <h3>1. What type of TV screen technologies are currently available in Australia and which are the most frequent?</h3>
+            <p class="answer-text"><strong>Answer:</strong> The available screen technologies in the Australian market are LCD, LCD (LED), and OLED. Among these, <strong>LCD (LED)</strong> is by far the most frequent technology, dominating the market share over standard LCD and OLED.</p>
+            <div class="chart-container">
+                <img src="q1_chart.png" alt="Screen Technologies Chart" class="chart-image">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>2. What screen sizes are currently available, and which are the most frequent?</h3>
+            <p class="answer-text"><strong>Answer:</strong> Screen sizes range widely from small monitors (around 24 inches) to massive displays (over 85 inches). The most frequent sizes available are standard living room dimensions, specifically <strong>32-inch, 24-inch and 60-inch</strong> models.</p>
+            <div class="chart-container">
+                <img src="q2_chart.png" alt="Screen Sizes Chart" class="chart-image">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>3. Which brands have the greatest number of different models?</h3>
+            <p class="answer-text"><strong>Answer:</strong> The market is highly competitive, but brands like <strong>Kogan, LG, Samsung and Hisense</strong> offer the greatest number of different television models to consumers.</p>
+            <div class="chart-container">
+                <img src="q3_chart.png" alt="Top Brands Chart" class="chart-image">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>4. Which type of screen technology consumes the least amount of power?</h3>
+            <p class="answer-text"><strong>Answer:</strong> Based on the median average mode power, standard <strong>LCD</strong> screens consume the least amount of power (approx. 71.35W), followed by LCD (LED), while OLED models tend to have the highest median power consumption (approx. 112.70W).</p>
+            <div class="chart-container">
+                <img src="q4_chart.png" alt="Technology Power Consumption Chart" class="chart-image">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>5. What is the relationship between screen size and power use?</h3>
+            <p class="answer-text"><strong>Answer:</strong> There is a <strong>strong positive correlation</strong> between screen size and power use. As the physical size of the television increases, the average mode power consumption increases proportionally.</p>
+            <div class="chart-container">
+                <img src="q5_chart.png" alt="Screen Size vs Power Scatter Plot" class="chart-image">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>6. What is the relationship between star rating and screen size?</h3>
+            <p class="answer-text"><strong>Answer:</strong> The relationship is somewhat dispersed, but mid-to-large screens (like 55" and 65") show a wide variation in star ratings. Extremely large screens often struggle to achieve the highest star ratings due to their high absolute power draw.</p>
+            <div class="chart-container">
+                <img src="q6_chart.png" alt="Star Rating vs Screen Size Scatter Plot" class="chart-image">
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>7. Are there differences in power consumption between brands?</h3>
+            <p class="answer-text"><strong>Answer:</strong> Yes, there are significant differences. Some brands maintain a tight, optimized power consumption profile across their range such as Tavice, while other brands (especially those offering very large or high-brightness models) exhibit a much wider spread and higher overall median power usage such as Spark Electronics.</p>
+            <div class="chart-container">
+                <img src="q7_chart.png" alt="Power Consumption by Brand Box Plot" class="chart-image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Designed by <strong>Farnoush Tahernezhad Javazm</strong></p>
+        <p><em>GenAI Acknowledgement:</em> GitHub Copilot was used to assist in generating the HTML, CSS, and JavaScript structure of this website.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
