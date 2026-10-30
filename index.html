@@ -25,8 +25,8 @@
     <main>
         <h1>Appliance Energy Consumption</h1>
         <div id="content"></div>
-        <!-- Give the SVG a size so shapes can be seen -->
-        <svg width="300" height="150"></svg>
+        
+        <div class="responsive-svg-container"></div>
     </main>
 
     <footer>
@@ -34,9 +34,14 @@
         <p><em>GenAI Acknowledgement:</em> GitHub Copilot was used to assist in generating the HTML, CSS, and JavaScript structure of this website.</p>
     </footer>
 
-    <!-- Load D3 first, then D3 code file -->
+    <!-- D3 library -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="energy-d3.js"></script>
+    
+    <!-- NEW: JS for T04-3 only -->
+    <script src="t04-3-bars.js"></script>
+    
+    <!-- Old T04-2 demo (temporarily disabled) -->
+    <!-- <script src="energy-d3.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>
