@@ -23,13 +23,10 @@
     </header>
 
     <main>
-        <h1>Welcome to Appliance Energy Visualisation</h1>
-        <div class="content-box">
-            <h2>Exploring the Australian Market</h2>
-            <p>Welcome to our data exploration platform. This website is dedicated to visualising the energy consumption and specifications of household appliances currently available in the Australian market.</p>
-            <br>
-            <p>Please navigate to the <strong>Televisions</strong> page to view our latest data analysis and charts regarding TV screen technologies, sizes, and power consumption.</p>
-        </div>
+        <h1>Appliance Energy Consumption</h1>
+        <div id="content"></div>
+        <!-- Give the SVG a size so shapes can be seen -->
+        <svg width="300" height="150"></svg>
     </main>
 
     <footer>
@@ -37,6 +34,9 @@
         <p><em>GenAI Acknowledgement:</em> GitHub Copilot was used to assist in generating the HTML, CSS, and JavaScript structure of this website.</p>
     </footer>
 
+    <!-- Load D3 first, then D3 code file -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="energy-d3.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
